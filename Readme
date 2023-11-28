@@ -1,0 +1,95 @@
+React Native Expo Authentication Example
+This is a simple React Native Expo project that demonstrates user authentication using a backend server built with Express. The authentication mechanism involves signup, login, and token refreshing. The backend is responsible for handling user registration, login, and providing a protected route that requires a valid access token.
+
+Features
+User registration (signup)
+User login
+Token refreshing
+Protected route requiring a valid access token
+Technologies Used
+React Native Expo
+Express (Node.js framework)
+Expo SecureStore
+AsyncStorage
+Getting Started
+Prerequisites
+Node.js and npm installed on your machine
+Expo CLI installed (npm install -g expo-cli)
+Installation
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/react-native-authentication.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd react-native-authentication
+Install dependencies for the frontend:
+
+bash
+Copy code
+npm install
+Navigate to the backend directory:
+
+bash
+Copy code
+cd backend
+Install dependencies for the backend:
+
+bash
+Copy code
+npm install
+Running the App
+Backend
+Start the backend server:
+
+bash
+Copy code
+npm start
+The server will run on http://localhost:3000.
+
+Frontend
+Navigate back to the root project directory:
+
+bash
+Copy code
+cd ..
+Start the Expo development server:
+
+bash
+Copy code
+expo start
+This will open the Expo Developer Tools in your browser.
+
+Use the Expo Client app on your mobile device or an emulator to scan the QR code and run the app.
+
+Backend Endpoints
+Signup:
+
+Endpoint: POST /register
+Example: http://localhost:3000/register
+Login:
+
+Endpoint: POST /login
+Example: http://localhost:3000/login
+Token Refresh:
+
+Endpoint: POST /refresh-token
+Example: http://localhost:3000/refresh-token
+Protected Route:
+
+Endpoint: GET /protected
+Requires a valid access token.
+Example: http://localhost:3000/protected
+Usage
+Open the app and navigate to the signup screen to create a new account.
+After signup, login with your credentials.
+Access the protected route, and it will display dummy data if your access token is valid.
+The app uses Expo SecureStore and AsyncStorage to manage user tokens securely.
+Contributing
+Feel free to contribute to this project by opening issues or submitting pull requests.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
